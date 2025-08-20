@@ -3983,3 +3983,12 @@ a {
 .about-content-img img {
   border-radius: 10px; /* adjust px value as needed */
 }
+.reservation-img1 img{
+  border-radius: 10px;
+}
+.reservation-img2 img{
+  border-radius: 10px;
+}
+.reservation-img3 img{
+  border-radius: 10px;
+}
