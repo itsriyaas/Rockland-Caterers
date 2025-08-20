@@ -1831,7 +1831,7 @@ a {
 }
 /* insta-feed-section */
 .insta-feed-section{
-  padding: 104px 0 968px;
+  padding: 100px;
   position: relative;
   overflow: hidden;
 }
@@ -3205,6 +3205,10 @@ a {
 .get-in-touch .contact-form-img{
   margin-bottom: 42px;
   text-align: center;
+ 
+}
+.contact-form-img img{
+ border-radius: 20px;
 }
 .get-in-touch .send_message_form_box_content .choose-services{
   position: relative;
