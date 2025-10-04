@@ -29,9 +29,44 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+<style>
+  .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1050;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    text-align: center;
+  }
+  .lightbox-content {
+    margin-top: 5%;
+    max-width: 90%;
+    max-height: 80%;
+  }
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    color: white;
+    padding: 16px;
+    margin-top: -50px;
+  }
+  .prev { left: 20px; }
+  .next { right: 20px; }
+</style>
 </head>
-
-
 <body>
    <!-- HEADER-SECTION -->
     <div class="home-header-section">
@@ -134,65 +169,75 @@
             </div>
         </div>
     </div>
-    <div class="get-in-touch gallery-page">
-        <div class="container">
-            <div class="row" data-aos="fade-up">
-                <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
-                    <figure class="contact-form-img">
-                           <img src="./assets/images/temp-img/635x540.jpg" alt="" class="img-fluid">
-                       </figure>
-                   
-                </div>
-                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
-                   <figure class="contact-form-img">
-                            <img src="./assets/images/temp-img/445X300.jpg" alt="" class="img-fluid">
-                        </figure>
-                     <figure class="contact-form-img">
-                        <img src="./assets/images/temp-img/445X220.jpg" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-            <!-- row2 -->
-            <div class="row" data-aos="fade-up">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
-                     <figure class="contact-form-img">
-                           <img src="./assets/images/temp-img/350 1.jpg" alt="" class="img-fluid">
-                       </figure>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
-                    <figure class="contact-form-img">
-                            <img src="./assets/images/temp-img/350 2.jpg" alt="" class="img-fluid">
-                        </figure>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
-                    <figure class="contact-form-img">
-                            <img src="./assets/images/temp-img/350 3.jpg" alt="" class="img-fluid">
-                        </figure>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
-                    <figure class="contact-form-img">
-                            <img src="./assets/images/temp-img/350 4.jpg" alt="" class="img-fluid">
-                        </figure>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
-                    <figure class="contact-form-img">
-                            <img src="./assets/images/temp-img/350 5.jpg" alt="" class="img-fluid">
-                        </figure>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
-                    <figure class="contact-form-img">
-                            <img src="./assets/images/temp-img/350 6.jpg" alt="" class="img-fluid">
-                        </figure>
-                </div>
-            </div>
-            <div class="banner-btn discover-btn-banner">
-                <a href="about.html" class="text-decoration-none">Make Reservations</a>
-            </div>
-        </div>
-        <figure class="gallery-design-img">
-            <img src="./assets/images/gallery-design-img.png" alt="">
+    <!-- Gallery section -->
+     <div class="get-in-touch gallery-page">
+  <div class="container">
+    <div class="row" data-aos="fade-up">
+      <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+        <figure class="contact-form-img">
+          <img src="./assets/images/temp-img/635x540.jpg" alt="" class="img-fluid gallery-img">
         </figure>
+      </div>
+      <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+        <figure class="contact-form-img">
+          <img src="./assets/images/temp-img/445X300.jpg" alt="" class="img-fluid gallery-img">
+        </figure>
+        <figure class="contact-form-img">
+          <img src="./assets/images/temp-img/445X220.jpg" alt="" class="img-fluid gallery-img">
+        </figure>
+      </div>
     </div>
+
+    <!-- row2 -->
+    <div class="row" data-aos="fade-up">
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+        <figure class="contact-form-img">
+          <img src="./assets/images/temp-img/350 1.jpg" alt="" class="img-fluid gallery-img">
+        </figure>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+        <figure class="contact-form-img">
+          <img src="./assets/images/temp-img/350 2.jpg" alt="" class="img-fluid gallery-img">
+        </figure>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+        <figure class="contact-form-img">
+          <img src="./assets/images/temp-img/350 3.jpg" alt="" class="img-fluid gallery-img">
+        </figure>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+        <figure class="contact-form-img">
+          <img src="./assets/images/temp-img/350 4.jpg" alt="" class="img-fluid gallery-img">
+        </figure>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+        <figure class="contact-form-img">
+          <img src="./assets/images/temp-img/350 5.jpg" alt="" class="img-fluid gallery-img">
+        </figure>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+        <figure class="contact-form-img">
+          <img src="./assets/images/temp-img/350 6.jpg" alt="" class="img-fluid gallery-img">
+        </figure>
+      </div>
+    </div>
+
+    <div class="banner-btn discover-btn-banner">
+      <a href="about.html" class="text-decoration-none">Make Reservations</a>
+    </div>
+  </div>
+  <figure class="gallery-design-img">
+    <img src="./assets/images/gallery-design-img.png" alt="">
+  </figure>
+</div>
+
+<!-- Lightbox Modal -->
+<div id="lightboxModal" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightboxImg">
+  <a class="prev">&#10094;</a>
+  <a class="next">&#10095;</a>
+</div>
 </div> 
 <!-- Instagram-feed-section -->
 <section class="insta-feed-section">
@@ -377,6 +422,51 @@
     <script src="./assets/js/type.js"></script>
     <script src="assets/js/custom-script.js"></script>
     <script src="./assets/js/video-popup.js"></script>
+    <!-- Fullview img -->
+     <script>
+  const images = document.querySelectorAll(".gallery-img");
+  const modal = document.getElementById("lightboxModal");
+  const modalImg = document.getElementById("lightboxImg");
+  const closeBtn = document.querySelector(".close");
+  const prevBtn = document.querySelector(".prev");
+  const nextBtn = document.querySelector(".next");
+  
+  let currentIndex = 0;
+
+  function openModal(index) {
+    currentIndex = index;
+    modal.style.display = "block";
+    modalImg.src = images[currentIndex].src;
+  }
+
+  function closeModal() {
+    modal.style.display = "none";
+  }
+
+  function showNext() {
+    currentIndex = (currentIndex + 1) % images.length;
+    modalImg.src = images[currentIndex].src;
+  }
+
+  function showPrev() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    modalImg.src = images[currentIndex].src;
+  }
+
+  images.forEach((img, index) => {
+    img.addEventListener("click", () => openModal(index));
+  });
+
+  closeBtn.addEventListener("click", closeModal);
+  nextBtn.addEventListener("click", showNext);
+  prevBtn.addEventListener("click", showPrev);
+
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+</script>
 </body>
 
 </html>
