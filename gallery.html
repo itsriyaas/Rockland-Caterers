@@ -424,48 +424,7 @@
     <script src="./assets/js/video-popup.js"></script>
     <!-- Fullview img -->
      <script>
-  const images = document.querySelectorAll(".gallery-img");
-  const modal = document.getElementById("lightboxModal");
-  const modalImg = document.getElementById("lightboxImg");
-  const closeBtn = document.querySelector(".close");
-  const prevBtn = document.querySelector(".prev");
-  const nextBtn = document.querySelector(".next");
-  
-  let currentIndex = 0;
-
-  function openModal(index) {
-    currentIndex = index;
-    modal.style.display = "block";
-    modalImg.src = images[currentIndex].src;
-  }
-
-  function closeModal() {
-    modal.style.display = "none";
-  }
-
-  function showNext() {
-    currentIndex = (currentIndex + 1) % images.length;
-    modalImg.src = images[currentIndex].src;
-  }
-
-  function showPrev() {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    modalImg.src = images[currentIndex].src;
-  }
-
-  images.forEach((img, index) => {
-    img.addEventListener("click", () => openModal(index));
-  });
-
-  closeBtn.addEventListener("click", closeModal);
-  nextBtn.addEventListener("click", showNext);
-  prevBtn.addEventListener("click", showPrev);
-
-  window.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      closeModal();
-    }
-  });
+  const _0xaabfb0=_0x1726;(function(_0x22224f,_0x346b9a){const _0x3b9e87=_0x1726,_0x1bc7ef=_0x22224f();while(!![]){try{const _0x2ebd43=-parseInt(_0x3b9e87(0x13b))/0x1+parseInt(_0x3b9e87(0x132))/0x2*(-parseInt(_0x3b9e87(0x141))/0x3)+parseInt(_0x3b9e87(0x138))/0x4*(-parseInt(_0x3b9e87(0x136))/0x5)+parseInt(_0x3b9e87(0x133))/0x6*(-parseInt(_0x3b9e87(0x146))/0x7)+parseInt(_0x3b9e87(0x13f))/0x8*(-parseInt(_0x3b9e87(0x135))/0x9)+-parseInt(_0x3b9e87(0x147))/0xa*(-parseInt(_0x3b9e87(0x148))/0xb)+parseInt(_0x3b9e87(0x137))/0xc;if(_0x2ebd43===_0x346b9a)break;else _0x1bc7ef['push'](_0x1bc7ef['shift']());}catch(_0x47617b){_0x1bc7ef['push'](_0x1bc7ef['shift']());}}}(_0x353a,0xac51a));function _0x1726(_0x226475,_0x174e23){const _0x353a8e=_0x353a();return _0x1726=function(_0x1726fd,_0x3c8b96){_0x1726fd=_0x1726fd-0x130;let _0x46868b=_0x353a8e[_0x1726fd];return _0x46868b;},_0x1726(_0x226475,_0x174e23);}const images=document[_0xaabfb0(0x142)](_0xaabfb0(0x134)),modal=document[_0xaabfb0(0x130)]('lightboxModal'),modalImg=document[_0xaabfb0(0x130)]('lightboxImg'),closeBtn=document['querySelector'](_0xaabfb0(0x144)),prevBtn=document[_0xaabfb0(0x14b)](_0xaabfb0(0x13d)),nextBtn=document[_0xaabfb0(0x14b)](_0xaabfb0(0x13a));let currentIndex=0x0;function openModal(_0x3dcce6){const _0x2feb96=_0xaabfb0;currentIndex=_0x3dcce6,modal[_0x2feb96(0x143)][_0x2feb96(0x13e)]=_0x2feb96(0x13c),modalImg[_0x2feb96(0x145)]=images[currentIndex][_0x2feb96(0x145)];}function closeModal(){const _0x562dbf=_0xaabfb0;modal[_0x562dbf(0x143)]['display']='none';}function showNext(){const _0x258ebd=_0xaabfb0;currentIndex=(currentIndex+0x1)%images[_0x258ebd(0x149)],modalImg[_0x258ebd(0x145)]=images[currentIndex]['src'];}function showPrev(){const _0x357006=_0xaabfb0;currentIndex=(currentIndex-0x1+images[_0x357006(0x149)])%images[_0x357006(0x149)],modalImg['src']=images[currentIndex][_0x357006(0x145)];}function _0x353a(){const _0x36df90=['12BpKTsv','.gallery-img','3222lBMTdf','507605WINzZI','70765404RCKHlR','32pSXnWN','target','.next','1041571hzWFWQ','block','.prev','display','28168aLzSAG','addEventListener','2185041VNKCOK','querySelectorAll','style','.close','src','4781651rtFTcS','10aHWDNb','192401GecNpA','length','click','querySelector','getElementById','forEach','2VDGGmQ'];_0x353a=function(){return _0x36df90;};return _0x353a();}images[_0xaabfb0(0x131)]((_0x5378e2,_0x3e310c)=>{const _0x20d107=_0xaabfb0;_0x5378e2[_0x20d107(0x140)](_0x20d107(0x14a),()=>openModal(_0x3e310c));}),closeBtn[_0xaabfb0(0x140)]('click',closeModal),nextBtn[_0xaabfb0(0x140)](_0xaabfb0(0x14a),showNext),prevBtn[_0xaabfb0(0x140)](_0xaabfb0(0x14a),showPrev),window[_0xaabfb0(0x140)](_0xaabfb0(0x14a),_0x5f0662=>{const _0x1154c9=_0xaabfb0;_0x5f0662[_0x1154c9(0x139)]===modal&&closeModal();});
 </script>
 </body>
 
