@@ -4013,7 +4013,7 @@ a {
   width: max-content;
 }
 
-/* ✅ Pause animation on hover */
+/* ✅ Pause animation */
 .testimonial-marquee-wrapper:hover .testimonial-marquee {
   animation-play-state: paused;
 }
